@@ -1,0 +1,44 @@
+<html>
+    <head>
+    <title>Register form</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-box">
+                <form action="" name="Formfill" onsubmit="return validation()">
+                    <h2>Register</h2>
+                    <p id="result"></p>
+                    <div class="input-box">
+                        <input type="text" name="Username" placeholder="Username">
+                    </div>
+                    <div class="input-box">
+                        <input type="email" name="Email" placeholder="Email">
+                    </div>
+                    <div class="input-box">
+                        <input type="password" name="Password" placeholder="Password">
+                    </div>
+                    <div class="input-box">
+                        <input type="password" name="cPassword" placeholder="Confirm Password">
+                    </div>
+                    <div class="button">
+                        <input type="submit" class="btn" onclick="validation()" value="Register">
+                    </div>
+                    <div class="group">
+                        <span>
+                            <a href="a">Forget-Password</a>
+                        </span>
+                        <span><a href="a">Login</a></span>
+                    </div>
+                </form>
+            </div>
+            <div class="popup" id="popup">
+                <h2>Thank you!</h2>
+                <p>your  were Registration was successfull.Thanks!</p>
+                <a href="Login.html">
+                    <button onclick="closeSlide()">OK</button></a>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
